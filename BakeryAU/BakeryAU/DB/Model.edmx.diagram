@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="078f5c882d4d463ca72fb29085301265" Name="Diagram1">
+        <EntityTypeShape EntityType="BekaryDBModel.Client" Width="1.5" PointX="0.75" PointY="2.5" />
+        <EntityTypeShape EntityType="BekaryDBModel.Employee" Width="1.5" PointX="0.75" PointY="7.375" />
+        <EntityTypeShape EntityType="BekaryDBModel.Gender" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="BekaryDBModel.Manufacturer" Width="1.5" PointX="0.75" PointY="11.75" />
+        <EntityTypeShape EntityType="BekaryDBModel.Product" Width="1.5" PointX="3" PointY="11.375" />
+        <EntityTypeShape EntityType="BekaryDBModel.Purchase" Width="1.5" PointX="3" PointY="2.5" />
+        <EntityTypeShape EntityType="BekaryDBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BekaryDBModel.User" Width="1.5" PointX="3" PointY="5.75" />
+        <EntityTypeShape EntityType="BekaryDBModel.ProductHistory" Width="1.5" PointX="5.25" PointY="11.5" />
+        <EntityTypeShape EntityType="BekaryDBModel.PurchaseProduct" Width="1.5" PointX="5.25" PointY="2.5" />
+        <AssociationConnector Association="BekaryDBModel.FK_Purchase_Client" />
+        <AssociationConnector Association="BekaryDBModel.FK_Purchase_Employee" />
+        <AssociationConnector Association="BekaryDBModel.FK_Product_Manufacturer" />
+        <AssociationConnector Association="BekaryDBModel.FK_ProductHistory_Product" />
+        <AssociationConnector Association="BekaryDBModel.FK_PurchaseProduct_Product" />
+        <AssociationConnector Association="BekaryDBModel.FK_PurchaseProduct_Purchase" />
+        <AssociationConnector Association="BekaryDBModel.UserClient" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

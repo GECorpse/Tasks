@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:lvl="using:FitnessClub.Pages"
+		xmlns:lvlA="using:FitnessClub.Pages.AdminLevel"
+		xmlns:lvlD="using:FitnessClub.Pages.DirectorLevel"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		Background="Transparent"
+		TransparencyLevelHint="AcrylicBlur"
+		ExtendClientAreaToDecorationsHint="True"
+        x:Class="FitnessClub.MainWindow"
+        Title="FitnessClub">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<TextBlock Text="FitnessClub_Sigma" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+		<lvl:Login Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+	</Grid>
+</Window>

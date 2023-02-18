@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="FitnessClub.Pages.Login">
+
+	<Grid>
+		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10" Background="#44FFFFFF" >
+			<Separator Opacity="0" Width="300"/>
+			<TextBlock Text="Авторизация" HorizontalAlignment="Center"/>
+			<TextBox Watermark="Login pls"/>
+			<TextBox Watermark="Password pls"/>
+			<Button Content="Enter" HorizontalAlignment="Center"/>
+			<Separator Opacity="0" Width="300"/>
+		</StackPanel>
+	</Grid>
+</UserControl>
