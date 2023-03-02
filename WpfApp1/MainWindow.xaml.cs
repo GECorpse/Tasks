@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CoffeeHouse9_14.Pages
+namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для ProdListPage.xaml
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class ProdListPage : Page
+    public partial class MainWindow : Window
     {
-        public ProdListPage()
+        public MainWindow()
         {
             InitializeComponent();
         }
