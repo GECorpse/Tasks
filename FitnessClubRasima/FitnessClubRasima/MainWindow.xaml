@@ -5,8 +5,121 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClubRasima"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="720" Width="1280">
     <Grid>
-        
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Windows/resources/Background1.jpg" />
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="500"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="TxtNameUser"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Text="Пользователь: "
+                   HorizontalAlignment="Right"
+                   Margin="16"
+                   FontSize="18"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="1"
+                   Text="Выберите то что вам нужно"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock 
+                    Text="Клиенты"
+                    FontSize="22"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    />
+
+            <Image x:Name="ClientImage"
+                                   Height="150"
+                                   Width="190">
+                <Image.Source>
+                    <ImageSource>/Windows/resources/Nullservice.jpg</ImageSource>
+                </Image.Source>
+
+            </Image>
+
+            <Button 
+                        x:Name ="bClientListWindow"
+                        Content="Список клиентов"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
+                        Click="bClientListWindow_Click"/>
+                
+            </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+                <TextBlock 
+                    Text="Сервис"
+                    FontSize="22"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    />
+
+                <Image x:Name="ServiceImage"
+                                       Height="150"
+                                       Width="190">
+                    <Image.Source>
+                        <ImageSource>/Windows/resources/Nullservice.jpg</ImageSource>
+                    </Image.Source>
+                
+                </Image>
+
+                <Button 
+                        x:Name ="bServiceListWindow"
+                        Content="Список услуг"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
+                        Click="bServiceListWindow_Click"/>
+                
+            </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock 
+                    Text="История продаж"
+                    FontSize="22"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                />
+
+            <Image x:Name="PurchaseImage"
+                                   Height="150"
+                                   Width="190">
+                <Image.Source>
+                    <ImageSource>/Windows/resources/Nullservice.jpg</ImageSource>
+                </Image.Source>
+
+            </Image>
+
+            <Button 
+                    x:Name ="bPurchaseHistoryWindow"
+                    Content="переход в историю покупок"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Center"
+                    Click="bPurchaseHistoryWindow_Click"
+                    />
+
+        </StackPanel>
+
     </Grid>
 </Window>

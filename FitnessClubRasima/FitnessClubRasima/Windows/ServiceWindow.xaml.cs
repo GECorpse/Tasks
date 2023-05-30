@@ -58,10 +58,6 @@ namespace FitnessClubRasima.Windows
             serviceList = serviceList.Where(i => i.Title.ToLower().Contains(TbSearch.Text.ToLower())).ToList();
 
 
-            //Описание
-            //serviceList = serviceList.Where(i => i.Description.Contains(TbSearch.Text)).ToList();
-
-
             //Сортировка
             var selectedIndexCmb = CmbSort.SelectedIndex;
 
@@ -113,7 +109,8 @@ namespace FitnessClubRasima.Windows
             GetServiceList();
         }
         
-                private void BtnEditProduct_Click(object sender, RoutedEventArgs e)
+        //редактирование
+                private void BtnEditService_Click(object sender, RoutedEventArgs e)
                 {
                     var button = sender as Button;
                     if (button == null)
@@ -130,6 +127,7 @@ namespace FitnessClubRasima.Windows
                     GetServiceList(); 
                 }
 
+
         private void TbSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
             GetServiceList();
@@ -139,5 +137,26 @@ namespace FitnessClubRasima.Windows
         {
             GetServiceList();
         }
+
+        private void BtnCartService_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button == null)
+            {
+                return;
+            }
+
+            var service = button.DataContext as Service;
+
+            ClassHelper.CartClass.ServiceCart.Add(service);
+            MessageBox.Show($"Услуга {service.Title.ToString()} добавлена");
+        }
+
+        private void BtnGoToCart_Click(object sender, RoutedEventArgs e)
+        {
+            CartWindow cartWindow = new CartWindow();
+            cartWindow.ShowDialog();
+        }
+
     }
 }

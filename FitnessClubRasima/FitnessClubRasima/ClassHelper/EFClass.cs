@@ -11,6 +11,7 @@ namespace FitnessClubRasima.ClassHelper
 {
     public class EFClass
     {
-        public static FitnessClubRasimaEntities1 context { get; set; } = new FitnessClubRasimaEntities1();
+
+        public static Entities context { get; set; } = new Entities();
     }
 }

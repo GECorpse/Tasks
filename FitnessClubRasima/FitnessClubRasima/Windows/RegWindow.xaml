@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClubRasima.Windows"
         mc:Ignorable="d"
-        Title="AuthWindow" Height="600" Width="400" >
+        Title="RegWindow" Height="600" Width="400" >
     <Grid>
 
         <Grid.Background>
@@ -58,8 +58,13 @@
 
             <Separator Opacity="0" Margin="5"/>
 
-            <Button x:Name="bReg" Content="Регистрация" VerticalAlignment="Bottom"/>
+            <Button x:Name="bReg" Content="Завершить регистрацию" VerticalAlignment="Bottom"/>
 
+            <Separator Opacity="0" Margin="5"/>
+
+            <Button x:Name="bBackToAuth" Content="Переход к окну Авторизации" VerticalAlignment="Bottom"
+                    Click="bBackToAuth_Click"/>
+            
         </StackPanel>
     </Grid>
 </Window>

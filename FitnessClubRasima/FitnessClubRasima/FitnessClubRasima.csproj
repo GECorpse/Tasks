@@ -64,66 +64,107 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassHelper\CartClass.cs" />
     <Compile Include="ClassHelper\EFClass.cs" />
+    <Compile Include="ClassHelper\UserClass.cs" />
     <Compile Include="DB\Client.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\Employee.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\FitnessDB.Context.cs">
+    <Compile Include="DB\FitnessClubModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FitnessDB.Context.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\FitnessDB.cs">
+    <Compile Include="DB\FitnessClubModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\FitnessDB.Designer.cs">
+    <Compile Include="DB\FitnessClubModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FitnessDB.edmx</DependentUpon>
+      <DependentUpon>FitnessClubModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="DB\Gender.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\Order.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\OrderService.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Role.cs">
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\Service.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\sp_helpdiagrams_Result.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\sysdiagrams.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\Trainer.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DB\TrainerService.cs">
-      <DependentUpon>FitnessDB.tt</DependentUpon>
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\User.cs">
+      <DependentUpon>FitnessClubModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AddEditClientListWindow.xaml.cs">
+      <DependentUpon>AddEditClientListWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\AddEditServiceWindow.xaml.cs">
       <DependentUpon>AddEditServiceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddEditUserWindow.xaml.cs">
+      <DependentUpon>AddEditUserWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AuthWindow.xaml.cs">
       <DependentUpon>AuthWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\CartWindow.xaml.cs">
+      <DependentUpon>CartWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ClientListWindow.xaml.cs">
+      <DependentUpon>ClientListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ManagementListWindow.xaml.cs">
+      <DependentUpon>ManagementListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ManagerMainWindow.xaml.cs">
+      <DependentUpon>ManagerMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PurchaseHistoryWindow.xaml.cs">
+      <DependentUpon>PurchaseHistoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PurchaseWindow.xaml.cs">
+      <DependentUpon>PurchaseWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\RegWindow.xaml.cs">
       <DependentUpon>RegWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ReportListWindow.xaml.cs">
+      <DependentUpon>ReportListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ScheduleWindow.xaml.cs">
+      <DependentUpon>ScheduleWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ServiceWindow.xaml.cs">
       <DependentUpon>ServiceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TrainerMainWindow.xaml.cs">
+      <DependentUpon>TrainerMainWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -137,7 +178,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\AddEditClientListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\AddEditServiceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddEditUserWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,11 +194,47 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\CartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ClientListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ManagementListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ManagerMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PurchaseHistoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PurchaseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\RegWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\ReportListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ScheduleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ServiceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\TrainerMainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,12 +257,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DB\FitnessDB.edmx">
+    <EntityDeploy Include="DB\FitnessClubModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>FitnessDB.Designer.cs</LastGenOutput>
+      <LastGenOutput>FitnessClubModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DB\FitnessDB.edmx.diagram">
-      <DependentUpon>FitnessDB.edmx</DependentUpon>
+    <None Include="DB\FitnessClubModel.edmx.diagram">
+      <DependentUpon>FitnessClubModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -200,18 +285,23 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB\FitnessDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>FitnessDB.edmx</DependentUpon>
-      <LastGenOutput>FitnessDB.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DB\FitnessDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>FitnessDB.edmx</DependentUpon>
-      <LastGenOutput>FitnessDB.cs</LastGenOutput>
-    </Content>
+    <Resource Include="Windows\resources\remove.png" />
+    <Resource Include="Windows\resources\cart.png" />
+    <Resource Include="Windows\resources\edit.png" />
     <Resource Include="Windows\resources\Background1.jpg" />
     <Resource Include="Windows\resources\Nullservice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\FitnessClubModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FitnessClubModel.edmx</DependentUpon>
+      <LastGenOutput>FitnessClubModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DB\FitnessClubModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FitnessClubModel.edmx</DependentUpon>
+      <LastGenOutput>FitnessClubModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

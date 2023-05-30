@@ -23,5 +23,11 @@ namespace FitnessClubRasima.Windows
         {
             InitializeComponent();
         }
+
+        private void bBackToAuth_Click(object sender, RoutedEventArgs e)
+        {
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.ShowDialog();
+        }
     }
 }

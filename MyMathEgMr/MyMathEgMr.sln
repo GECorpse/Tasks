@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMathEgMr", "MyMathEgMr\MyMathEgMr.csproj", "{13026E6B-6DFD-4FD0-B911-66925B126D9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMath", "MyMath\MyMath.csproj", "{8AB00D8C-3C2B-4B4D-9AD8-E923A95AE5DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yMathTest", "yMathTest\yMathTest.csproj", "{255A1FBA-24E0-431A-A7FA-1AAA18ACE1CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13026E6B-6DFD-4FD0-B911-66925B126D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13026E6B-6DFD-4FD0-B911-66925B126D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13026E6B-6DFD-4FD0-B911-66925B126D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13026E6B-6DFD-4FD0-B911-66925B126D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AB00D8C-3C2B-4B4D-9AD8-E923A95AE5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB00D8C-3C2B-4B4D-9AD8-E923A95AE5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB00D8C-3C2B-4B4D-9AD8-E923A95AE5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB00D8C-3C2B-4B4D-9AD8-E923A95AE5DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255A1FBA-24E0-431A-A7FA-1AAA18ACE1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255A1FBA-24E0-431A-A7FA-1AAA18ACE1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255A1FBA-24E0-431A-A7FA-1AAA18ACE1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255A1FBA-24E0-431A-A7FA-1AAA18ACE1CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAD8EBAD-90C6-484E-99EB-9AC2B5290933}
+	EndGlobalSection
+EndGlobal

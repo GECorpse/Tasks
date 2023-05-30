@@ -32,21 +32,20 @@ namespace CoffeeHouse9_14.Windows
             RegistrationWindow reg = new RegistrationWindow();
             this.Close();
             reg.Show();
-            
-            
-        }
+         }
 
         private void btnAuth_Click(object sender, RoutedEventArgs e)
         {
             var authUser = context.Account.ToList()
                 .Where(i => i.Login== tbLogin.Text && i.Password== pbPass.Password)
                 .FirstOrDefault();
+            
             if (authUser != null)
             {
-               MainWindow main=new MainWindow();
-                
+                EmployeeDataContext.employee = authUser.Employee.FirstOrDefault();
+                MainWindow main=new MainWindow();
                 main.Show();
-
+                this.Close();
             }
             else
             {

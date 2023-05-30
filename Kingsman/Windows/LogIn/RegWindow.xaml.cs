@@ -23,5 +23,55 @@ namespace Kingsman.Windows
         {
             InitializeComponent();
         }
-    }
+
+        private void BtnReg_Click(object sender, RoutedEventArgs e)
+        {
+            // валидация
+            if (string.IsNullOrWhiteSpace(TbName.Text))
+            {
+                MessageBox.Show("Поле Фамилия не заполнено");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(TbEmail.Text))
+            {
+                MessageBox.Show("Поле Имя не заполнено");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(TbPhone.Text))
+            {
+                MessageBox.Show("Поле Имя не заполнено");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(TbRegLogin.Text))
+            {
+                MessageBox.Show("Поле Имя не заполнено");
+                return;
+            }
+
+            // добавление 
+            DB.Client addClient = new DB.Client();
+            addClient.Login = TbRegLogin.Text;
+            addClient.Password = PbRegPassword.Password;
+            addClient.Phone = TbPhone.Text;
+            addClient.FirstName = TbName.Text;
+            addClient.LastName = TbLastName.Text;
+            addClient.Email = TbEmail.Text;
+            if (TbLastName.Text != string.Empty)
+            {
+                addClient.LastName = TbLastName.Text;
+            }
+            addClient.ID = (CmbGender.SelectedItem as DB.Gender).ID;
+
+            ClassHelper.EF.Context.Client.Add(addClient);
+
+            // сохранение
+            ClassHelper.EF.Context.SaveChanges();
+
+            MessageBox.Show("Пользователь успешно добавлен");
+
+
+        }
+
+    }  
 }
